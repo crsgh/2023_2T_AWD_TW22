@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lobster', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .dayButton {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .monday { background-color: green; }
+  .tuesday { background-color: blue; }
+  .wednesday { background-color: yellow; }
+  .thursday { background-color: orange; }
+  .friday { background-color: purple; }
+  .saturday { background-color: red; }
+  .sunday { background-color: cyan; }
+  
+  #animatedBox {
+    width: 150px;
+    height: 150px;
+    border: 4px solid;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: transform 0.5s, border-color 0.5s, background-color 0.5s, opacity 0.5s;
+  }
+  
+  #animatedBox.monday { border-color: green; background-color: green; }
+  #animatedBox.tuesday { border-color: blue; background-color: blue; }
+  #animatedBox.wednesday { border-color: yellow; background-color: yellow; }
+  #animatedBox.thursday { border-color: orange; background-color: orange; }
+  #animatedBox.friday { border-color: purple; background-color: purple; }
+  #animatedBox.saturday { border-color: red; background-color: red; }
+  #animatedBox.sunday { border-color: brown; background-color: cyan; }
+  
+  .title {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    font-size: 100px;
+    color: #3498db;
+  }
+  
